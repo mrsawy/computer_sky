@@ -5,6 +5,7 @@ body {
     color: #757575;
     font-family: 'Cairo', sans-serif;
     background: #ffffff;
+    /* overflow-x: hidden; */
 }
 
 body *{
@@ -304,7 +305,7 @@ h6 {
 .single {
     position: relative;
     padding: 90px 0 60px 0;
-    background: #605e5e42;
+    background: #d6d3d3da;
 }
 
 .about .col-md-12,
@@ -1226,4 +1227,12 @@ h6 {
 .col-lg-4.col-md-6.portfolio-item .portfolio-img   .img-fluid {
     height: 100%;
     width: 100%;
+}
+
+
+@media  screen and (max-width:500px) {
+    .imgDivInAboutUs{
+        transform: scale(0.7);
+    }
+    
 }
