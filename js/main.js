@@ -77,3 +77,18 @@
   
 })(jQuery);
 
+
+
+document.querySelectorAll(`.whatsAppLink`).forEach(e=>{
+     // Detect if the user is on a mobile device
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  
+  // Set the appropriate URL based on whether the user is on a mobile device or not
+  if (isMobile) {
+    // Set the href to use the "whatsapp://" protocol for mobile devices
+    e.href = 'whatsapp://send?phone=+966593234249';
+  } else {
+    // Set the href to use the "https://" protocol for web browsers
+    e.href = 'https://wa.me/966593234249';
+  }
+})
