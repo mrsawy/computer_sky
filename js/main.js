@@ -86,9 +86,9 @@ document.querySelectorAll(`.whatsAppLink`).forEach(e=>{
   // Set the appropriate URL based on whether the user is on a mobile device or not
   if (isMobile) {
     // Set the href to use the "whatsapp://" protocol for mobile devices
-    e.href = 'whatsapp://send?phone=+966593234249';
+    e.href = 'whatsapp://send?phone+966535396034';
   } else {
     // Set the href to use the "https://" protocol for web browsers
-    e.href = 'https://wa.me/966593234249';
+    e.href = 'https://wa.me/966535396034';
   }
 })
